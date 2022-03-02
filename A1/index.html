@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form class="form" action="/submit.html" method="post" class="form">
+        <h1>Form</h1>
+        <div>
+            <label for="email"><b>Enter your email</b></label>
+            <input type="text" name="email" id="input-email" oninput="validateForm()">
+            
+        </div>
+        <br/>
+        <div>
+            <label for="password"><b>Enter your password</b></label>
+            <input oninput="validateForm()" value="" id="password" name="password" type="password" placeholder="Enter password" required/>
+            <p style="color: red;" id="validpass">password must be greater than 6 characters</p>
+        </div>
+        <div>
+            <h3>Choose gender : </h3>
+            <select name="gender" id="gender" required>
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+        </div>
+        <div>
+            <h3>Choose a role : </h3>
+            <input type="radio" id="admin" name="role" value="admin" required>
+            <label for="admin"> Admin</label><br>
+            <input type="radio" id="user" name="role" value="user">
+            <label for="user">User</label>
+        </div> 
+        <div>
+            <h3>Select permissions</h3>
+            <input oninput="validateForm()" type="checkbox" id="perm1" name="perm1" value="perm1" class="mycheckboxes" >
+            <label for="perm1"> Perm1</label><br>
+            <input oninput="validateForm()" type="checkbox" id="perm2" name="perm2" value="perm2" class="mycheckboxes">
+            <label for="perm2"> Perm2</label><br>
+            <input oninput="validateForm()" type="checkbox" id="perm3" name="perm3" value="perm3" class="mycheckboxes">
+            <label for="perm3"> Perm3</label><br>
+            <input oninput="validateForm()" type="checkbox" id="perm4" name="perm4" value="perm4" class="mycheckboxes">
+            <label for="perm4"> Perm4</label>
+        </div>  
+        <div>
+            <button type="submit" class="submit-button" disabled>Submit</button>
+        </div>
+        
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>

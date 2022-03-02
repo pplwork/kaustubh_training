@@ -1,0 +1,19 @@
+.submit-button{
+    padding: 14px 44px;
+    color: #fdfdfd;   
+    display: block;
+    margin: 0 auto;
+}
+.submit-button:disabled{
+   background: #c5dce7;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 90vh;
+    margin: auto;
+    padding: 20px;
+    border: 1px black solid;
+}
