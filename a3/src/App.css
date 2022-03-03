@@ -1,0 +1,53 @@
+
+.stopwatch{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: 60vh;
+  border: 1px black solid;
+  margin: auto;
+  overflow: hidden;
+}
+
+.timer{
+  display: flex;
+  align-items: center;
+  border: 1px black solid;
+  min-width: 60%;
+  justify-content: center;
+  margin: 1em;
+  padding: 1em;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px black solid;
+  min-width: 60%;
+  margin: 1em;
+  padding: 1em;
+}
+
+.lapdata{
+  display: flex;
+  flex-direction: column;
+  min-width:60vw;
+  min-height: 20vh;
+  max-width: 60vw;
+  max-height: 20vh;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: auto;
+
+}
+
+.laplist{
+  width: 50vw;
+  height: 10vh;
+  text-align: center;
+  background-color: rgb(160, 177, 160);
+  padding: 1em;
+}
