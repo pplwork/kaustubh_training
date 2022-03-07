@@ -1,1 +1,0 @@
-# kaustubh_training
